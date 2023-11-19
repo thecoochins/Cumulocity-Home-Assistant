@@ -1,3 +1,8 @@
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
+
+[![GitHub license](https://img.shields.io/github/license/thecoochins/Cumulocity-Home-Assistant)](https://github.com/thecoochins/Cumulocity-Home-Assistant/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/thecoochins/Cumulocity-Home-Assistant)](https://github.com/thecoochins/Cumulocity-Home-Assistant/releases/)
+
 # Cumulocity Home Assistant HACS Integration 
 
 This repository utilizes the Home Assistant Community Store (HACS) approach to integrate with the Cumulocity platform within the Home Assistant ecosystem. This is connected via the [Cumulocity REST API](https://cumulocity.com/api/core/) which is a tennant driven IOT device management platform.  
