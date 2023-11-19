@@ -1,6 +1,6 @@
 {
   "name": "Home Assistant Cumulocity",
-  "persistent_directory": "keep",
-  "zip_release": true,
-  "filename": "hacs-cumulocity.zip"
+  "render_readme": false,
+  "iot_class": "Cloud Polling",
+  "homeassistant": "0.115.0"
 }
