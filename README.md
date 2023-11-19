@@ -1,6 +1,6 @@
 # Cumulocity Home Assistant HACS Integration 
 
-This repository uses the HACS method for home assistant integration to the cumulocity platform via the [Cumulocity REST API](https://hacs.xyz/docs/publish/integration)
+This repository utilizes the Home Assistant Community Store (HACS) approach to integrate with the Cumulocity platform within the Home Assistant ecosystem. This is connected via the [Cumulocity REST API](https://cumulocity.com/api/core/) which is a tennant driven IOT device management platform.  
 
 ## This project is supported by [Kallipr IOT](https://kallipr.com/)
 
@@ -18,7 +18,14 @@ Once the pre-reqs are installed, head to the `HACS` tab in your Home Assistant a
 
 Add this repository to the `custom repositories` pop-up box and select `integration` in the category dropdown. Finally click `add` follow the prompts and install.  
 
-Once installed you will need to configure 
+Once installed you will need to then configure the integration with your cumulocity sign in details. You are going to need the following: 
+
+`base_url` this is the 
+`tenant` 
+`username`
+`password`
+
+
 
 
 # Todo's
