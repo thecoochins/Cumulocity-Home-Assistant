@@ -21,7 +21,7 @@ class CumulocityConfigFlow(config_entries.ConfigFlow, domain="cumulocity"):
             data = user_input
             return self.async_create_entry(title=title, data=data)
 
-        return self.show_form()
+        return await self.show_form()  # Await the show_form coroutine
 
     async def show_form(self, errors=None):
         """Show the configuration form to the user."""
@@ -41,7 +41,7 @@ class CumulocityConfigFlow(config_entries.ConfigFlow, domain="cumulocity"):
             return self.async_abort(reason="Reauthentication is not supported.")
 
         # Configure the options flow for additional settings, including password.
-        return await self.async_step_options()
+        return await self.async_step_options()  # Await the async_step_options coroutine
 
     async def async_step_options(self, user_input=None):
         """Handle the options flow."""
@@ -53,7 +53,7 @@ class CumulocityConfigFlow(config_entries.ConfigFlow, domain="cumulocity"):
             )
             return self.async_create_entry(title="", data={})
 
-        return self.async_show_form(
+        return await self.async_show_form(  # Await the async_show_form coroutine
             step_id="options",
             data_schema=vol.Schema(CONFIG_SCHEMA),
             description_placeholders={"title": self.config_entry.title},
@@ -64,4 +64,4 @@ class CumulocityConfigFlow(config_entries.ConfigFlow, domain="cumulocity"):
         if user_input is not None:
             return await self.async_remove_entry(entry=self.config_entry)
 
-        return self.async_show_form(step_id="remove_confirm")
+        return await self.async_show_form(step_id="remove_confirm")  # Await the async_show_form coroutine
