@@ -18,9 +18,15 @@ Once the pre-reqs are installed, head to the `HACS` tab in your Home Assistant a
 
 Add this repository to the `custom repositories` pop-up box and select `integration` in the category dropdown. Finally click `add` follow the prompts and install.  
 
+Once installed you will need to configure 
+
+
+# Todo's
+
+- Currently all devices associated to the login are brought in and attached with their respective measurements as Home Assistant entities. Potentially this will be swapped out for a list of devices that can be selected from. 
+- Streaming using the 
 
 
 
-
-# Dedicated to Peter Howchin 
-We didnt get to meet but the stories of your innovation and perseverance are an inspiration, this ones for you 🫶
+### This project is dedicated to Peter Howchin 
+We didnt get to meet but the stories of your innovation and perseverance are an inspiration, and this ones for you 🫶
