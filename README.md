@@ -7,7 +7,7 @@
 
 This repository utilizes the Home Assistant Community Store (HACS) approach to integrate with the Cumulocity platform within the Home Assistant ecosystem. This is connected via the [Cumulocity REST API](https://cumulocity.com/api/core/) which is a tennant driven IOT device management platform.  
 
-## This project is supported by [Kallipr IOT](https://kallipr.com/)
+## This project has been made possible thanks to [Kallipr IOT](https://kallipr.com/)
 
 ![Kallipr](https://cdn.kallipr.com/wp-content/uploads/2022/11/24132240/Kallipr-Logo-Inline-rgb-small.png)
 
@@ -48,5 +48,5 @@ To update new devices associated to the registered cumulocity account, run an in
 - Initial release
 
 
-### This project is dedicated to Peter Howchin 
-We didnt get to meet but the stories of your innovation and perseverance are an inspiration, and this ones for you 🫶
+### This project is dedicated to the late Peter Howchin 
+We didnt get to meet but the stories of your innovation and perseverance are an inspiration 🫶
