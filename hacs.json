@@ -1,6 +1,6 @@
 {
-  "name": "Test integration",
+  "name": "Home Assistant Cumulocity",
   "persistent_directory": "keep",
   "zip_release": true,
-  "filename": "test.zip"
+  "filename": "hacs-cumulocity.zip"
 }
