@@ -42,6 +42,9 @@ To update new devices associated to the registered cumulocity account, run an in
 ## v0.0.1
 - Initial release
 
+## More Information
+
+For more information please see the [Readme.md](https://github.com/thecoochins/Cumulocity-Home-Assistant/blob/master/README.md)
 
 ### This project is dedicated to Peter Howchin 
 We didnt get to meet but the stories of your innovation and perseverance are an inspiration, and this ones for you 🫶
