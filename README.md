@@ -20,18 +20,22 @@ Add this repository to the `custom repositories` pop-up box and select `integrat
 
 Once installed you will need to then configure the integration with your cumulocity sign in details. You are going to need the following: 
 
-- `base_url` -- this is the 
+- `base_url` -- Cumulocity instance url 
 - `tenant`   -- Cumulocity tenant id 
 - `username` -- Cumulocity username
 - `password` -- Cumulocity password
 
+Enter those details into the configuration box and then submit to let the integration complete its install. 
 
+### Things to note
 
+To update new devices associated to the registered cumulocity account, run an initialise from the integration settings.
 
 # Todo's
 
 - Currently all devices associated to the login are brought in and attached with their respective measurements as Home Assistant entities. Potentially this will be swapped out for a list of devices that can be selected from. 
-- Streaming using the 
+- Faster updates using the [Cumulocity real time updates api].(https://cumulocity.com/api/core/#section/Real-time-operations/Handshake)
+- automatically update and check for new devices on existing integrations 
 
 
 
