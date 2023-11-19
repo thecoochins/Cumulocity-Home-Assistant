@@ -20,10 +20,10 @@ Add this repository to the `custom repositories` pop-up box and select `integrat
 
 Once installed you will need to then configure the integration with your cumulocity sign in details. You are going to need the following: 
 
-- `base_url` this is the 
-- `tenant` 
-- `username`
-- `password`
+- `base_url` -- this is the 
+- `tenant`   -- Cumulocity tenant id 
+- `username` -- Cumulocity username
+- `password` -- Cumulocity password
 
 
 
