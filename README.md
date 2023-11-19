@@ -35,8 +35,12 @@ To update new devices associated to the registered cumulocity account, run an in
 
 - Currently all devices associated to the login are brought in and attached with their respective measurements as Home Assistant entities. Potentially this will be swapped out for a list of devices that can be selected from. 
 - Faster updates using the [Cumulocity real time updates api].(https://cumulocity.com/api/core/#section/Real-time-operations/Handshake)
-- automatically update and check for new devices on existing integrations 
+- Automatically update and check for new devices on existing integrations 
 
+# Change Log
+
+## v0.0.1
+- Initial release
 
 
 ### This project is dedicated to Peter Howchin 

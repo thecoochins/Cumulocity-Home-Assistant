@@ -1,11 +1,10 @@
 {
-  "domain": "cumulocity-hacs",
-  "name": "cumulocity hacs integration",
+  "domain": "hassio-cumulocity",
+  "name": "Cumulocity HACS Integration",
   "documentation": "https://github.com/thecoochins/integration-hacs",
   "dependencies": [],
   "codeowners": ["@developersteve", "@quinnfenpen"],
   "requirements": [],
-  "homeassistant": "0.95.0", 
+  "version": "0.0.1", 
   "config_flow": true
 }
-
