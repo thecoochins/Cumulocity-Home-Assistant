@@ -19,6 +19,13 @@ To run this you are going to need an active installation of [Home Assistant](htt
 
 ## Installing 
 
+To install this will you will need [Home Assistant Community Store (HACS) installed](https://hacs.xyz/docs/setup/download/)
+
+### Automatic
+
+[![Add to Home Assistant button here](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fthecoochins%2FCumulocity-Home-Assistant)
+
+### Semi Manual 
 Once the pre-reqs are installed, head to the `HACS` tab in your Home Assistant and click on `Integrations`. Then Click the 3 dots in the top right and select `custom repositories`. 
 
 Add this repository to the `custom repositories` pop-up box and select `integration` in the category dropdown. Finally click `add` follow the prompts and install.  
