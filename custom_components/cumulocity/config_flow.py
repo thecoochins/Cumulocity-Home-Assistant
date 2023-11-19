@@ -1,13 +1,13 @@
 import voluptuous as vol
 from homeassistant import config_entries
-from homeassistant.const import CONF_PASSWORD
+from homeassistant.const import CONF_USERNAME, CONF_PASSWORD, CONF_URL, CONF_TENANT
 
 # Define the schema for the Cumulocity IoT configuration.
 CONFIG_SCHEMA = vol.Schema({
-    vol.Required("base_url"): str,
-    vol.Required("tenant"): str,
-    vol.Required("username"): str,
+    vol.Required(CONF_URL): str,
+    vol.Required(CONF_USERNAME): str,
     vol.Required(CONF_PASSWORD): str,
+    vol.Required(CONF_TENANT): str,
 })
 
 class CumulocityConfigFlow(config_entries.ConfigFlow, domain="cumulocity"):
@@ -65,10 +65,3 @@ class CumulocityConfigFlow(config_entries.ConfigFlow, domain="cumulocity"):
             return await self.async_remove_entry(entry=self.config_entry)
 
         return self.async_show_form(step_id="remove_confirm")
-
-# Example YAML configuration for the configuration.yaml file.
-# cumulocity:
-#   base_url: "https://your-cumulocity-instance.com"
-#   tenant: "your-tenant-id"
-#   username: "your-username"
-#   password: "your-password"
