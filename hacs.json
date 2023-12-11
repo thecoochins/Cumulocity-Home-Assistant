@@ -2,5 +2,13 @@
   "name": "Home Assistant Cumulocity",
   "render_readme": false,
   "iot_class": "Cloud Polling",
-  "homeassistant": "0.115.0"
+  "homeassistant": "0.115.0",
+  "version": "1.0.0",  
+  "documentation": "https://github.com/thecoochins/Cumulocity-Home-Assistant/blob/main/README.md",  // Link to your integration's documentation
+  "domain": "cumulocity",  
+  "config_flow": true,  
+  "integration": "cumulocity",  
+  "country": "Worldwide",  
+  "codeowners": ["@developersteve"],  
+  "hide": false  
 }
