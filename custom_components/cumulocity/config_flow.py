@@ -16,7 +16,7 @@ CONFIG_SCHEMA = vol.Schema({
     vol.Required(CONF_TENANT): str,
 })
 
-class CumulocityConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+class CumulocityFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
     """Cumulocity IoT Configuration Flow."""
 
     async def async_step_user(self, user_input=None):
