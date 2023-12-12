@@ -1,6 +1,12 @@
+from __future__ import annotations
+
+from typing import Any
+
+from cumulocity import UnknownError, send
 import voluptuous as vol
 from homeassistant import config_entries
-from homeassistant.const import CONF_USERNAME, CONF_PASSWORD, CONF_URL, CONF_TENANT
+from homeassistant.const import CONF_USERNAME, CONF_PASSWORD, CONF_URL, CONF_TENANT, DEFAULT_NAME, DOMAIN
+from homeassistant.data_entry_flow import FlowResult
 
 # Define the schema for the Cumulocity IoT configuration.
 CONFIG_SCHEMA = vol.Schema({
@@ -10,7 +16,7 @@ CONFIG_SCHEMA = vol.Schema({
     vol.Required(CONF_TENANT): str,
 })
 
-class CumulocityConfigFlow(config_entries.ConfigFlow, domain="cumulocity"):
+class CumulocityConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Cumulocity IoT Configuration Flow."""
 
     async def async_step_user(self, user_input=None):
@@ -62,6 +68,6 @@ class CumulocityConfigFlow(config_entries.ConfigFlow, domain="cumulocity"):
     async def async_step_remove(self, user_input=None):
         """Handle removal of the entry."""
         if user_input is not None:
-            return await self.async_remove_entry(entry=self.config_entry)
+            return await self.hass.config_entries.async_remove(entry=self.config_entry)
 
         return await self.async_show_form(step_id="remove_confirm")  # Await the async_show_form coroutine
